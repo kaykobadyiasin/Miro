@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.hover_transition {
+    transition-duration: .4s;
+}
+
+
+.containerWidth{
+    width: 80%;
+}
