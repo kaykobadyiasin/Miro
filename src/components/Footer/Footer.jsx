@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="containerWidth mx-auto">
                 <div className="grid lg:grid-cols-4 xl:text-left text-center justify-between place-items-center">
                     <div className='col-span-1'>
-                        <h4 className="text-xl font-extrabold">Scan. Detect. Remove.</h4>
+                        <h4 className="text-xl font-extrabold mb-10">Scan. Detect. Remove.</h4>
 
                         <div className='flex gap-8'>
                             <FaTwitterSquare className='text-4xl' />
