@@ -1,4 +1,12 @@
-## Getting Started
+## Live link
+
+```bash
+https://miro1.netlify.app/
+```
+
+
+
+## Getting Started to run project
 
 First, run the Miro project:
 
