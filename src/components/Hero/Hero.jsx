@@ -7,9 +7,9 @@ import { FaRegStarHalfStroke, FaStar } from 'react-icons/fa6';
 
 const Hero = () => {
     return (
-        <div className='lg:my-20 my-10'>
+        <div className='containerWidth mx-auto lg:my-20 my-10'>
             <div className='flex lg:flex-row flex-col-reverse justify-center xl:mx-0 mx-5'>
-                <div className='lg:w-[33%] xl:mt-0 mt-10'>
+                <div className='max-w-2xl mx-auto lg:px-5 xl:mt-0 mt-10'>
                     <h3 className='text-4xl font-bold text-[#050038]'>Take ideas from better to best</h3>
                     <p className='my-5'>In the office, remote, or a mix of the two, with Miro, your team can connect, collaborate, and co-create in one space no matter where you are.</p>
                     <form action="" className='flex flex-col gap-3'>

@@ -7,9 +7,9 @@ import { LuMoveRight } from 'react-icons/lu';
 
 const Sections = () => {
     return (
-        <>
+        <div className='pb-20'>
             {/* section 1  */}
-            <div className='flex lg:flex-row flex-col justify-evenly items-center containerWidth mx-auto xl:mt-0 mt-10'>
+            <div className='flex lg:flex-row flex-col justify-evenly items-center containerWidth mx-auto'>
                 <div className='lg:w-[33%]'>
                     <div className="text-4xl font-bold">
                         <SectionTitel section={'Work together, wherever you work'} />
@@ -26,7 +26,7 @@ const Sections = () => {
             </div>
 
             {/* section 2  */}
-            <div className='flex lg:flex-row flex-col-reverse justify-evenly items-center lg:gap-0 gap-10 containerWidth  mx-auto xl:mt-0 mt-10'>
+            <div className='flex lg:flex-row flex-col-reverse justify-evenly items-center lg:gap-0 gap-10 containerWidth  mx-auto xl:mt-0 my-20'>
 
                 <div className=''>
                     <img src={section2} alt="" />
@@ -43,7 +43,7 @@ const Sections = () => {
             </div>
 
             {/* section 3  */}
-            <div className='containerWidth mx-auto py-5'>
+            <div className='containerWidth mx-auto'>
                 <div className="lg:bg-origin-content lg:bg-center bg-left relative h-[500px] flex items-center justify-center bg-no-repeat" style={{ backgroundImage: `url(${section})` }}>
                     <div className='w-full'></div>
                     <div className='absolute lg:right-80 text-[#050038] flex flex-col gap-2 text-center'>
@@ -55,7 +55,7 @@ const Sections = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
