@@ -16,22 +16,22 @@ const NavItem = ({ item }) => {
         <div className="relative group xl:block hidden">
             {/* NavLink for the main item */}
             <NavLink
-                to={item.path}
+                to={item?.path}
                 className="lg:hover:bg-[#F1F3FD] lg:hover_transition px-3 py-2 rounded-md mx-1 flex items-center gap-2"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                {item.label} {item.dropdownItems && <FaAngleDown className="text-sm mt-1" />}
+                {item?.label} {item?.dropdownItems && <FaAngleDown className="text-sm mt-1" />}
             </NavLink>
             {/* Dropdown items */}
-            {item.dropdownItems && isOpen && (
-                <div className="w-52 absolute hidden mt-1 space-y-2 bg-white border rounded-md shadow-lg lg:group-hover:block">
-                    {item.dropdownItems.map((dropdownItem, idx) => (
+            {item?.dropdownItems && (
+                <div className="w-52 absolute hidden space-y-2 animate__animated animate__fadeIn hover_transition bg-white border rounded-md shadow-lg lg:group-hover:block">
+                    {item?.dropdownItems.map((dropdownItem, idx) => (
                         <Link
                             key={idx}
-                            to={dropdownItem.path}
+                            to={dropdownItem?.path}
                             className="block px-4 py-2 text-gray-800 lg:hover:bg-gray-200"
                         >
-                            {dropdownItem.label}
+                            {dropdownItem?.label}
                         </Link>
                     ))}
                 </div>
@@ -86,11 +86,12 @@ const Navbar = () => {
         { to: '/', label: <>Sign Up free <LuMoveRight /></>, className: 'flex items-center gap-2 bg-[#4262FF] hover:bg-[#F1F3FD] hover:text-[#4262FF] text-white px-8 py-3 rounded-full hover_transition' },
     ];
 
+
     return (
         <div className="">
             <div className="flex lg:flex-row flex-col items-center lg:justify-between justify-center container mx-auto py-3">
                 <div className="flex lg:flex-row flex-col">
-                    <div className="flex gap-2 ">
+                    <div className="flex gap-5 justify-start ">
                         {/* Toggle button for mobile view */}
                         <button onClick={() => setToggle(!toggle)} className="lg:hidden block">
                             <IoReorderThreeOutline className="text-3xl" />
@@ -120,22 +121,22 @@ const Navbar = () => {
                             {navItems.map((item, index) => (
                                 <div key={index} className="relative group">
                                     <NavLink
-                                        to={item.path}
+                                        to={item?.path}
                                         className="hover:bg-[#F1F3FD] lg:hover_transition px-3 py-2 rounded-md mx-1 flex items-center gap-2"
                                         onClick={() => setToggle(false)} // Close menu on item click
                                     >
-                                        {item.label} {item.dropdownItems && <FaAngleDown className="text-sm mt-1" />}
+                                        {item?.label} {item?.dropdownItems && <FaAngleDown className="text-sm mt-1" />}
                                     </NavLink>
-                                    {item.dropdownItems && (
+                                    {item?.dropdownItems && (
                                         <div className="w-52 absolute hidden mt-1 space-y-2 bg-white border rounded-md shadow-lg lg:group-hover:block">
-                                            {item.dropdownItems.map((dropdownItem, idx) => (
+                                            {item?.dropdownItems.map((dropdownItem, idx) => (
                                                 <Link
                                                     key={idx}
-                                                    to={dropdownItem.path}
+                                                    to={dropdownItem?.path}
                                                     className="block px-4 py-2 text-gray-800 lg:hover:bg-gray-200"
                                                     onClick={() => setToggle(false)} // Close menu on item click
                                                 >
-                                                    {dropdownItem.label}
+                                                    {dropdownItem?.label}
                                                 </Link>
                                             ))}
                                         </div>

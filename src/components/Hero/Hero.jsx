@@ -5,6 +5,7 @@ import frem2 from '../../assets/images/hero/Frame2.png'
 import frem3 from '../../assets/images/hero/Frame3.png'
 import { FaRegStarHalfStroke, FaStar } from 'react-icons/fa6';
 
+
 const Hero = () => {
     return (
         <div className='containerWidth mx-auto lg:my-20 my-10'>
